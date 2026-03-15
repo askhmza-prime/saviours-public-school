@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>Gallery – Saviour's Public School Moradabad</title><link rel="stylesheet" href="css/styles.css"/><style>.g-placeholder{border-radius:14px;}.g1{background:linear-gradient(135deg,#ccfbf1,#99f6e4)}.g2{background:linear-gradient(135deg,#ede9fe,#c4b5fd)}.g3{background:linear-gradient(135deg,#fef9c3,#fde047)}.g4{background:linear-gradient(135deg,#fee2e2,#fca5a5)}.g5{background:linear-gradient(135deg,#dbeafe,#93c5fd)}.g6{background:linear-gradient(135deg,#d1fae5,#6ee7b7)}</style></head>
+<body>
+<nav><div class="nav-inner"><div class="nav-logo"><div class="logo-badge">SPS</div><div class="logo-text"><h3>Saviour's Public School</h3><p>Civil Lines, Moradabad</p></div></div><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="academics.html">Academics</a></li><li><a href="faculty.html">Faculty</a></li><li><a href="notice.html">Notice Board</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="admissions.html" class="nav-admit">Admissions</a></li><li><a href="contact.html">Contact</a></li></ul><div class="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div></div></nav>
+<div class="mob-nav" id="mobNav"><button class="mob-close" onclick="toggleMob()">✕</button><a href="index.html" onclick="toggleMob()">Home</a><a href="about.html" onclick="toggleMob()">About</a><a href="academics.html" onclick="toggleMob()">Academics</a><a href="faculty.html" onclick="toggleMob()">Faculty</a><a href="notice.html" onclick="toggleMob()">Notice Board</a><a href="gallery.html" onclick="toggleMob()">Gallery</a><a href="admissions.html" onclick="toggleMob()">Admissions</a><a href="contact.html" onclick="toggleMob()">Contact</a></div>
+
+<div class="page-header"><div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span class="current">Gallery</span></div><h1>School Gallery</h1><p>Moments and memories from Saviour's Public School</p></div>
+
+<section class="section">
+  <div class="section-inner">
+    <div style="display:flex;gap:10px;margin-bottom:28px;flex-wrap:wrap" class="reveal">
+      <button onclick="filterG('all',this)" style="padding:8px 18px;border-radius:20px;border:1px solid var(--teal);background:var(--teal);color:white;font-size:0.82rem;font-weight:600;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif">All</button>
+      <button onclick="filterG('event',this)" style="padding:8px 18px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--gray);font-size:0.82rem;font-weight:600;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif">Events</button>
+      <button onclick="filterG('sports',this)" style="padding:8px 18px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--gray);font-size:0.82rem;font-weight:600;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif">Sports</button>
+      <button onclick="filterG('campus',this)" style="padding:8px 18px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--gray);font-size:0.82rem;font-weight:600;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif">Campus</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item reveal" data-cat="event"><div class="g-placeholder g1" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;height:100%"><div style="font-size:3rem">🎉</div><p style="font-size:0.78rem;font-weight:600;color:var(--teal)">Annual Function</p></div></div>
+      <div class="gallery-item reveal" data-cat="sports"><div class="g-placeholder g2" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;height:100%"><div style="font-size:3rem">⚽</div><p style="font-size:0.78rem;font-weight:600;color:#7c3aed">Sports Day</p></div></div>
+      <div class="gallery-item reveal" data-cat="campus"><div class="g-placeholder g3" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;height:100%"><div style="font-size:3rem">🏫</div><p style="font-size:0.78rem;font-weight:600;color:#d97706">School Building</p></div></div>
+      <div class="gallery-item reveal" data-cat="event"><div class="g-placeholder g4" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;height:100%"><div style="font-size:3rem">🇮🇳</div><p style="font-size:0.78rem;font-weight:600;color:#dc2626">Republic Day</p></div></div>
+      <div class="gallery-item reveal" data-cat="sports"><div class="g-placeholder g5" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;height:100%"><div style="font-size:3rem">🏃</div><p style="font-size:0.78rem;font-weight:600;color:#2563eb">Race Day</p></div></div>
+      <div class="gallery-item reveal" data-cat="campus"><div class="g-placeholder g6" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;height:100%"><div style="font-size:3rem">💻</div><p style="font-size:0.78rem;font-weight:600;color:#059669">Computer Lab</p></div></div>
+      <div class="gallery-item reveal" data-cat="event"><div class="g-placeholder g1" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;height:100%"><div style="font-size:3rem">🎨</div><p style="font-size:0.78rem;font-weight:600;color:var(--teal)">Art Exhibition</p></div></div>
+      <div class="gallery-item reveal" data-cat="event"><div class="g-placeholder g2" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;height:100%"><div style="font-size:3rem">🏆</div><p style="font-size:0.78rem;font-weight:600;color:#7c3aed">Prize Distribution</p></div></div>
+      <div class="gallery-item reveal" data-cat="campus"><div class="g-placeholder g3" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;height:100%"><div style="font-size:3rem">📚</div><p style="font-size:0.78rem;font-weight:600;color:#d97706">Classroom</p></div></div>
+    </div>
+    <p style="text-align:center;color:var(--gray);font-size:0.83rem;margin-top:24px;font-style:italic" class="reveal">📸 More photos will be updated soon. Visit us to see our beautiful campus!</p>
+  </div>
+</section>
+
+<footer><div class="footer-inner"><div class="footer-grid"><div class="footer-brand"><div style="display:flex;align-items:center;gap:12px;margin-bottom:4px"><div style="width:42px;height:42px;border-radius:12px;background:var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:white;font-size:0.9rem">SPS</div><span style="font-family:'Playfair Display',serif;font-weight:700;font-size:1rem">Saviour's Public School</span></div><p>A trusted institution in Civil Lines, Moradabad.</p></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="academics.html">Academics</a></li><li><a href="admissions.html">Admissions</a></li></ul></div><div class="footer-col"><h4>More</h4><ul><li><a href="faculty.html">Faculty</a></li><li><a href="notice.html">Notices</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h4>Contact</h4><ul><li><a href="#">📍 SBI Road, Civil Lines</a></li><li><a href="#">Moradabad, UP</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Saviour's Public School, Moradabad. All Rights Reserved.</p><p>UDISE: <span>09041504712</span> | Developed by <span>HMZA Digital</span></p></div></div></footer>
+<a href="https://wa.me/91" class="wa-float">💬</a>
+<script src="js/script.js"></script>
+<script>
+function filterG(cat,btn){
+  document.querySelectorAll('#galleryGrid .gallery-item').forEach(c=>{c.style.display=(cat==='all'||c.dataset.cat===cat)?'block':'none';});
+  document.querySelectorAll('[onclick^="filterG"]').forEach(b=>{b.style.background='transparent';b.style.color='var(--gray)';b.style.borderColor='var(--border)';});
+  btn.style.background='var(--teal)';btn.style.color='white';btn.style.borderColor='var(--teal)';
+}
+</script>
+</body>
+</html>
